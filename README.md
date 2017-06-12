@@ -86,5 +86,7 @@
 ⬇️ 와 같은 의미
 
 Message msg = new Message();
+
 msg.what = MainActivity.SET_DONE;
+
 handler.sendMessage(msg);
