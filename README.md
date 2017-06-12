@@ -1,4 +1,4 @@
-## AsyncTask
+## AsyncTask 🔄
 
 - AsyncTask = Thread + Handler
 - 스레드 간의 동기화와 핸들러 사용으로 복잡하고 번거로운 작업을 쉽게 만들어 줌
@@ -80,3 +80,10 @@
 ============ **참고** ==============
 
 ![enter image description here](http://img1.daumcdn.net/thumb/R1920x0/?fname=http%3A%2F%2Fcfile24.uf.tistory.com%2Fimage%2F277EDE4057D583F4173E0D)
+
+
+> handler.sendEmptyMessage(MainActivity.SET_DONE);
+⬇️ 와 같은 의미
+Message msg = new Message();
+msg.what = MainActivity.SET_DONE;
+handler.sendMessage(msg);
